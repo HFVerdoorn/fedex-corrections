@@ -1,1 +1,5 @@
-SELECT otp.du_id, otp.box_id, otp.tis_tracking_number, otp.customer_id, otp.tis_delivery_date, otp.otp_group FROM us_ops_analytics.logistics.on_time_performance otp INNER JOIN temp_fedex_tracking tmp ON otp.tis_tracking_number = tmp.tracking_number WHERE otp.tis_delivery_date >= CURRENT_DATE() - 90;
+SELECT otp.du_id, otp.box_id, otp.tis_tracking_number, otp.customer_id, otp.tis_delivery_date, otp.otp_group 
+FROM us_ops_analytics.logistics.on_time_performance otp 
+INNER JOIN temp_fedex_tracking tmp 
+  ON otp.tis_tracking_number = tmp.tracking_number 
+  WHERE otp.tis_delivery_date >= CURRENT_DATE() - 90;
