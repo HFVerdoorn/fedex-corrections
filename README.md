@@ -1,0 +1,1 @@
+This Repo is designed to assist the Gemini Gem "FedEx Address Corrections Analyzer". The Analyzer uses FedEx Tracking numbers as a search key to enrich it's output and analysis. An example tracking number is "887160861587" or "462706873405"
